@@ -1,0 +1,934 @@
+@media (max-width: 1200px) {
+  .header {
+    padding: 0;
+  }
+
+  .header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .search-wrapper {
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 12px);
+  }
+
+  .burger {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    position: relative;
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition: outline-color 0.3s ease-in-out;
+  }
+
+  .burger__line {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-darkgrey);
+  }
+
+  .burger__line:nth-child(1) {
+    bottom: 0px;
+  }
+
+  .burger__line:nth-child(3) {
+    top: 0px;
+  }
+
+  .burger:focus {
+    outline-color: var(--color-orange);
+  }
+
+  .header_nav {
+    position: absolute;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    top: 57px;
+    left: -50px;
+    height: 100vh;
+    padding: 50px;
+    width: 50%;
+    min-width: 250px;
+    background-color: #fff;
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .header_nav .header__list {
+    flex-direction: column;
+  }
+
+  .header_nav .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .header_nav .header__link {
+    font-size: 14px;
+  }
+
+  .header_nav--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .burger--active {
+    border: none;
+  }
+
+  .burger--active .burger__line {
+    background-color: var(--color-darkorange);
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    width: 25px;
+  }
+
+  .burger--active .burger__line:nth-child(3) {
+    width: 18px;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .header_logo {
+    width: 150px;
+    height: 48px;
+    margin-right: calc((100% - 154px) / 2);
+  }
+
+  .header-box {
+    padding: 0;
+  }
+
+  .header__container {
+    padding: 26px 50px;
+  }
+
+  .work__left-block {
+    width: calc((100% - 28px) / 2);
+    margin-right: 46px;
+  }
+
+  /* hero */
+
+  .hero {
+    padding: 0 50px;
+  }
+
+  .hero__container {
+    /* padding: 160px 77px; */
+    margin: 0;
+    margin-bottom: 82px;
+    /* background-image: url(/img/1024-hero-bg.png); */
+  }
+
+  .hero__content {
+    padding: 160px 77px;
+  }
+
+  .hero__title {
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .hero__txt {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  /* about  */
+  .about__title {
+    margin-bottom: 10px;
+  }
+
+  .about__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 62px;
+  }
+
+  .about__content {
+    flex-direction: column;
+  }
+  .about_left-block {
+    width: 100%;
+    margin-bottom: 32px;
+    min-height: 640px;
+  }
+
+  .left-block-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .left-block-bottom {
+    padding: 50px;
+  }
+
+  .about_right-block {
+    width: 100%;
+  }
+
+  .right-top {
+    padding: 65px 0 65px 317px;
+    background-position: bottom 50% left 75px;
+  }
+
+  .right-bottom {
+    padding: 65px 0 65px 317px;
+    background-position: bottom 50% left 75px;
+  }
+
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .left-block__wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+    max-height: 640px;
+  }
+
+  /* work */
+
+  .work__nav {
+    margin-bottom: 53px;
+  }
+
+  .work__text {
+    margin-bottom: 25px;
+  }
+
+  .work {
+    margin-bottom: 83px;
+  }
+
+  .work__right-block {
+    background-image: url(/img/1024-work-bg.png);
+  }
+
+  .work__text {
+    max-width: 435px;
+  }
+
+  /* faq */
+
+  .faq {
+    margin-bottom: 80px;
+  }
+
+  .faq__title {
+    margin-bottom: 32px;
+    font-family: Montserrat;
+    font-size: 47.3 px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .faq__btn-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 756px;
+  }
+
+  .faq__btn-big {
+    padding: 30px 0;
+  }
+
+  .faq__btn-1 {
+    padding: 36px 0px 39px 0px;
+  }
+
+  /* footer */
+  .footer__text {
+    display: none;
+  }
+
+  .footer_nav-block {
+    margin-right: 133px;
+  }
+
+  .footer__container {
+    padding: 35px 50px;
+    justify-content: normal;
+  }
+
+  .footer__form-container {
+    margin: 0;
+  }
+
+  .footer_nav-block {
+    padding-top: 0px;
+  }
+
+  .footer__btn {
+    padding: 19px 38px;
+  }
+
+  .footer__form-name {
+    margin-bottom: 25px;
+    font-family: Montserrat;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .form-item:last-child {
+    margin-bottom: 32px;
+  }
+
+  .footer__checkbox-txt {
+    font-family: Montserrat;
+    font-size: 15.7px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .footer__checkbox {
+    margin-right: 4px;
+  }
+
+  .footer__enq {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__container {
+    padding: 10px 50px;
+  }
+
+  /* .hero__container {
+    padding: 160px 40px;
+  } */
+
+  .hero__content {
+    padding: 160px 40px;
+  }
+
+  .hero__title {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .hero__txt {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .about_left-block {
+    width: 100%;
+    margin-bottom: 32px;
+    min-height: 650px;
+  }
+
+  .about__text {
+    font-family: Montserrat;
+    font-size: 15.7px;
+    margin-bottom: 59px;
+  }
+
+  .left-block__wrapper {
+    max-height: 650px;
+  }
+
+  .left-block-bottom {
+    padding: 34px 43px 34px 40px;
+  }
+
+  .work__text {
+    max-width: 655px;
+  }
+
+  .work__btn-details {
+    padding: 21px 38px;
+  }
+
+  .work {
+    margin-bottom: 80px;
+  }
+
+  .faq__icon {
+    top: calc(50% - 26px);
+  }
+
+  .faq__btn-3 .faq__icon {
+    top: calc(50% - 33px);
+  }
+
+  .faq__btn-5 .faq__icon {
+    top: calc(50% - 33px);
+  }
+
+  .left-block-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 368px;
+  }
+
+  .about__subttle {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .right-block-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .right-top {
+    padding: 35px 46px 35px 170px;
+    background-position: bottom 50% left 40px;
+    background-size: 114px 99px;
+  }
+
+  .right-bottom {
+    padding: 35px 46px 35px 170px;
+    background-position: bottom 50% left 40px;
+    background-size: 114px 99px;
+  }
+
+  .work__item:not(:last-child) {
+    margin-right: 24%;
+  }
+
+  .work__content {
+    flex-direction: column-reverse;
+  }
+
+  .work__right-block {
+    background-image: url(/img/1024-work-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .work__left-block {
+    width: 100%;
+  }
+
+  .work__right-block {
+    width: 100%;
+    min-height: 284px;
+    background-image: url(/img/768-work-bg.png);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 36px;
+  }
+
+  .faq__btn-text {
+    max-width: 86%;
+  }
+  .faq__btn {
+    padding: 30px 0;
+  }
+  .faq__btn-first {
+    padding: 39px 0;
+  }
+
+  .footer_nav {
+    display: none;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  .footer__enq {
+    width: 81%;
+  }
+
+  .footer__form {
+    margin-bottom: 50px;
+  }
+  .footer__logo-img {
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__container {
+    padding: 17px 16px;
+  }
+
+  .header_logo {
+    width: 110px;
+    height: 35px;
+    margin-right: calc((100% - 108px) / 2);
+  }
+
+  .burger__line:nth-child(1) {
+    bottom: -2px;
+  }
+
+  .burger__line:nth-child(3) {
+    top: 2px;
+  }
+
+  .hero {
+    padding: 0 15px;
+  }
+
+  .hero__container {
+    padding: 60px 21px;
+    min-height: 308px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .hero__title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .hero__txt {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .hero__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 6px 29px;
+    font-size: 12px;
+  }
+
+  /* about */
+
+  .about__container {
+    padding: 0 15px;
+  }
+
+  .about__title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .about__text {
+    font-family: Montserrat;
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    font-size: 13.8px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .about_left-block {
+    position: relative;
+    background-image: url(/img/320-about-bg.png);
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-right: 0;
+    min-height: 200px;
+  }
+
+  .left-block__wrapper {
+    background: none;
+  }
+
+  .left-block-bottom {
+    position: relative;
+    right: 0;
+    bottom: -208px;
+    flex-direction: column;
+    background: none;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .about__btn {
+    color: var(--color-orange);
+    font-size: 12px;
+    padding: 11px 43px;
+    box-sizing: border-box;
+  }
+
+  .left-block__wrapper {
+    min-height: 400px;
+    margin-bottom: 31px;
+  }
+
+  .about__btn:focus-visible {
+    color: white;
+  }
+
+  .about__btn:hover:not(:focus-visible) {
+    color: white;
+  }
+
+  .about__btn:active:not(:focus-visible) {
+    color: white;
+  }
+
+  .about__subtitle {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .right-block-text .left-block-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .right-top {
+    background-position: top 0px left 0px;
+    background-size: 64px 49px;
+    padding: 0;
+    padding-top: 59px;
+    outline: none;
+    background-image: url(/img/quib-320.svg);
+  }
+
+  .right-bottom {
+    background-position: top 0px left 0px;
+    padding: 0;
+    background-image: url(/img/gear-320.svg);
+    background-size: 64px 49px;
+    padding-top: 60px;
+    outline: none;
+  }
+
+  .left-block-text {
+    color: var(--color-darkgrey);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 13px;
+  }
+
+  .right-block-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .about {
+    margin-bottom: 60px;
+  }
+
+  /* work */
+
+  .work__title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+
+  .work__container {
+    padding: 0 15px;
+  }
+
+  .work__link {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .work__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .work__nav {
+    margin-bottom: 15px;
+  }
+
+  .work__right-block {
+    background-image: url(/img/320-work-bg.png);
+    background-size: cover;
+    min-height: 160px;
+  }
+
+  .work__subtitle {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .work__text {
+    font-family: Montserrat;
+    font-size: 13.7px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .work__right-block {
+    margin-bottom: 16px;
+  }
+  .work__left-block {
+    margin-right: 0;
+  }
+
+  .work__btn-details {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 44px;
+    margin-right: 7px;
+  }
+
+  .work__btn-contract {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 12px 31px;
+  }
+
+  .work {
+    margin-bottom: 60px;
+  }
+
+  /* faq */
+
+  .faq__container {
+    padding: 0 15px;
+  }
+
+  .faq__title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .faq__btn-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .faq__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq__btn {
+    padding: 30px 0;
+  }
+
+  .faq {
+    margin-bottom: 60px;
+  }
+
+  .faq__btn .faq__icon {
+    top: calc(50% - 15px);
+  }
+
+  /* footer */
+
+  .footer__form-name {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 21px;
+  }
+
+  .footer__container {
+    padding: 0 15px;
+    padding-top: 32px;
+  }
+
+  .footer__form {
+    margin-bottom: 14px;
+  }
+
+  .footer__enq {
+    width: 100%;
+    border-bottom: 1px solid #595959;
+  }
+
+  .footer__controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-item:last-child {
+    margin-bottom: 24px;
+  }
+
+  .footer__btn {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 13px 28px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .footer__checkbox-txt {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .footer__main-checkbox {
+    margin-bottom: 20px;
+  }
+  .footer_nav-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__form-container {
+    margin-bottom: 1px;
+  }
+
+  .footer__enq {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer__logo-link {
+    width: 131px;
+    height: 42px;
+    margin-bottom: 16px;
+  }
+
+  .social-link svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-item:not(:last-child) {
+    margin-right: 11px;
+  }
+}
