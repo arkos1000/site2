@@ -382,19 +382,19 @@ body {
 }
 
 .slide-1 {
-  background-image: url(/img/1024-hero-bg1.png);
+  background-image: url(../img/1024-hero-bg1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide-2 {
-  background-image: url(/img/1024-hero-bg2.png);
+  background-image: url(../img/1024-hero-bg2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide-3 {
-  background-image: url(/img/1024-hero-bg3.png);
+  background-image: url(../img/1024-hero-bg3.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -488,7 +488,7 @@ body {
 }
 
 .left-block__wrapper {
-  background-image: url(/img/about-bg.png);
+  background-image: url(../img/about-bg.png);
   background-size: cover;
   background-position: center;
   width: calc((100% - 32px) / 2);
@@ -555,7 +555,7 @@ body {
 
 .right-top {
   padding: 65px 15px 65px 300px;
-  background-image: url(/img/quib.svg);
+  background-image: url(../img/quib.svg);
   background-position: bottom 50% left 59px;
   background-repeat: no-repeat;
   margin-bottom: 32px;
@@ -584,7 +584,7 @@ body {
 
 .right-bottom {
   padding: 65px 15px 65px 300px;
-  background-image: url(/img/gear.svg);
+  background-image: url(../img/gear.svg);
   background-position: bottom 50% left 59px;
   background-repeat: no-repeat;
   outline: 1px solid #000;
@@ -701,7 +701,7 @@ body {
 
 .work__right-block-1 {
   width: calc((100% - 32px) / 2);
-  background-image: url(/img/work-bg.png);
+  background-image: url(../img/work-bg.png);
   background-size: cover;
   background-position: 0px 10px;
   background-repeat: no-repeat;
@@ -709,7 +709,7 @@ body {
 
 .work__right-block-2 {
   width: calc((100% - 32px) / 2);
-  background-image: url(/img/work-bg2.png);
+  background-image: url(../img/work-bg2.png);
   background-size: cover;
   background-position: 0px 10px;
   background-repeat: no-repeat;
@@ -717,7 +717,7 @@ body {
 
 .work__right-block-3 {
   width: calc((100% - 32px) / 2);
-  background-image: url(/img/work-bg3.png);
+  background-image: url(../img/work-bg3.png);
   background-size: cover;
   background-position: 0px 10px;
   background-repeat: no-repeat;
@@ -725,7 +725,7 @@ body {
 
 .work__right-block-4 {
   width: calc((100% - 32px) / 2);
-  background-image: url(/img/work-bg4.png);
+  background-image: url(../img/work-bg4.png);
   background-size: cover;
   background-position: 0px 10px;
   background-repeat: no-repeat;
