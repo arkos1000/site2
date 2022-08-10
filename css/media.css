@@ -128,10 +128,8 @@
   }
 
   .hero__container {
-    /* padding: 160px 77px; */
     margin: 0;
     margin-bottom: 82px;
-    /* background-image: url(/img/1024-hero-bg.png); */
   }
 
   .hero__content {
@@ -236,7 +234,7 @@
   }
 
   .work__right-block {
-    background-image: url(/img/1024-work-bg.png);
+    background-image: url(../img/1024-work-bg.png);
   }
 
   .work__text {
@@ -459,7 +457,7 @@
   }
 
   .work__right-block {
-    background-image: url(/img/1024-work-bg.png);
+    background-image: url(../img/1024-work-bg.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -472,7 +470,7 @@
   .work__right-block {
     width: 100%;
     min-height: 284px;
-    background-image: url(/img/768-work-bg.png);
+    background-image: url(../img/768-work-bg.png);
     background-position: center;
     background-size: cover;
     margin-bottom: 36px;
@@ -599,7 +597,7 @@
 
   .about_left-block {
     position: relative;
-    background-image: url(/img/320-about-bg.png);
+    background-image: url(../img/320-about-bg.png);
     background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
@@ -670,13 +668,13 @@
     padding: 0;
     padding-top: 59px;
     outline: none;
-    background-image: url(/img/quib-320.svg);
+    background-image: url(../img/quib-320.svg);
   }
 
   .right-bottom {
     background-position: top 0px left 0px;
     padding: 0;
-    background-image: url(/img/gear-320.svg);
+    background-image: url(../img/gear-320.svg);
     background-size: 64px 49px;
     padding-top: 60px;
     outline: none;
@@ -740,7 +738,7 @@
   }
 
   .work__right-block {
-    background-image: url(/img/320-work-bg.png);
+    background-image: url(../img/320-work-bg.png);
     background-size: cover;
     min-height: 160px;
   }
