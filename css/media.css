@@ -456,12 +456,12 @@
     flex-direction: column-reverse;
   }
 
-  .work__right-block {
+  /* .work__right-block {
     background-image: url(../img/1024-work-bg.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */
 
   .work__left-block {
     width: 100%;
@@ -474,6 +474,22 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 36px;
+  }
+
+  .work__right-block-1 {
+    background-image: url(../img/768-work-bg.png);
+  }
+
+  .work__right-block-2 {
+    background-image: url(../img/768-work-bg.png);
+  }
+
+  .work__right-block-3 {
+    background-image: url(../img/768-work-bg.png);
+  }
+
+  .work__right-block-4 {
+    background-image: url(../img/768-work-bg.png);
   }
 
   .faq__btn-text {
