@@ -224,7 +224,7 @@ body {
 }
 
 .header__search-btn:focus-visible {
-  outline-color: var(--color-orange);
+  outline: 2px solid var(--color-orange);
 }
 
 .header__search-btn:hover:not(:focus-visible) .loop-img path {
