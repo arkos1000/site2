@@ -1257,6 +1257,7 @@ body {
   min-height: 150px;
 }
 
+.footer__form-item::placeholder,
 .footer__textarea::placeholder {
   font-family: Montserrat;
   font-size: 16px;
