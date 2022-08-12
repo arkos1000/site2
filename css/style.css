@@ -58,6 +58,18 @@ p {
   font-style: normal;
 }
 
+.btn:hover {
+  outline: none;
+}
+
+.btn:active {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -139,6 +151,10 @@ body {
   height: 72px;
 }
 
+.header_logo:focus-visible {
+  outline: none;
+}
+
 .header__wrapper {
   justify-content: space-between;
   align-items: center;
@@ -201,7 +217,6 @@ body {
   position: absolute;
   right: 0px;
   bottom: calc(50% - 15px);
-  /* z-index: 10; */
 }
 
 .header__search {
@@ -235,8 +250,33 @@ body {
   fill: var(--color-orange);
 }
 
+.header__form-close:hover:not(:focus-visible) .close-search rect {
+  fill: var(--color-orange);
+}
+
+.header__form-close:hover:not(:focus-visible) .close-search circle {
+  stroke: var(--color-orange);
+}
+
 .header__search-btn:active:not(:focus-visible) {
   outline-color: var(--color-orange);
+}
+
+.header__form-close:focus-visible {
+  outline: 2px solid var(--color-darkorange);
+  outline-offset: 2px;
+}
+
+/* .header__form-close:hover {
+  outline: none;
+} */
+
+.header__form-close:hover:not(:focus-visible) .close-serch rect {
+  fill: var(--color-orange);
+}
+
+.header__form-close:hover:not(:focus-visible) .close-serch circle {
+  stroke: var(--color-orange);
 }
 
 .header-box {
@@ -646,7 +686,8 @@ body {
 }
 
 .work__step-button:focus-visible {
-  outline-color: var(--color-orange);
+  outline: 2px solid var(--color-orange);
+  border: none;
 }
 
 .work__step-button:hover {
@@ -759,6 +800,7 @@ body {
 
 .work__btn-details:focus-visible {
   background-color: var(--color-lightorange);
+  outline: none;
 }
 
 .work__btn-details:hover:not(:focus-visible) {
@@ -782,6 +824,7 @@ body {
 .work__btn-contract:focus-visible {
   color: white;
   background-color: var(--color-semigrey);
+  outline: none;
 }
 
 .work__btn-contract:hover:not(:focus-visible) {
@@ -798,6 +841,10 @@ body {
 
 .ac .ac-trigger::after {
   display: none;
+}
+
+.ac {
+  border: none;
 }
 
 .faq {
@@ -848,7 +895,7 @@ body {
   margin: 0;
 }
 
-.faq__btn {
+.accordion__item .faq__btn {
   position: relative;
   width: 100%;
   padding: 39px 0;
@@ -974,6 +1021,10 @@ body {
   justify-content: space-between;
 }
 
+.footer__wrap {
+  align-items: flex-start;
+}
+
 .footer__logo-img {
   margin-bottom: 16px;
 }
@@ -994,10 +1045,13 @@ body {
 
 .footer_nav-block {
   margin-right: calc((100% - 1246px) * 0.68);
+  align-self: flex-start;
 }
 
 .footer__enq {
   margin-right: calc((100% - 1240px) * 0.45);
+  width: 33%;
+  align-self: flex-start;
 }
 
 .footer__link {
@@ -1029,15 +1083,11 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: var(--color-grey);
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .footer__form-container {
   flex-direction: column;
-}
-
-.footer__enq {
-  width: 33%;
 }
 
 .footer__text-block {
@@ -1100,11 +1150,11 @@ body {
 }
 
 .form-item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .form-item:last-child {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .footer__controls {
@@ -1154,7 +1204,7 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 15.7px;
+  font-size: 15.6px;
   line-height: 32px;
   padding-left: 21px;
 }
@@ -1194,4 +1244,32 @@ body {
 
 .visualy-hidden {
   visibility: hidden;
+}
+
+.footer__textarea {
+  resize: none;
+  width: 100%;
+  background-color: #414141;
+  padding-top: 14px;
+  padding-left: 24px;
+  border: none;
+  min-height: 150px;
+}
+
+.footer__textarea::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-grey);
+}
+
+.form-list {
+  margin-bottom: 3px;
+}
+
+.footer__textarea:focus-visible {
+  outline: none;
 }
